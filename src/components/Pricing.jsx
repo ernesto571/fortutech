@@ -12,7 +12,7 @@ const prices = [
 
 const handleWhatsapp = (packageName, price) => {
   const text = [
-    `Hello Dadotech! I'm interested in the *${packageName}*.`,
+    `Hello Fortutech! I'm interested in the *${packageName}*.`,
     ``,
     `*Package:* ${packageName}`,
     `*Starting Price:* ${price}`,

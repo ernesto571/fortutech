@@ -10,7 +10,7 @@ const services = [
 ];
 
 const handleServiceMsg = (title) => {
-  const text = `Hello Dadotech! I'm interested in *${title}*. Please send me more information.`;
+  const text = `Hello Fortutech! I'm interested in *${title}*. Please send me more information.`;
   window.open(`https://wa.me/2349023744204?text=${encodeURIComponent(text)}`, "_blank");
 };
 

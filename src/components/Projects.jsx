@@ -84,12 +84,12 @@ export default function Project() {
         {/* last card */}
         <div
           ref={(el) => (cardRefs.current[project.length] = el)}
-          className="card-anim flex flex-col items-center justify-center bg-[#1a6b2f] h-[180px] md:h-[200px] lg:h-[250px] w-full"
+          className="card-anim flex flex-col items-center justify-center bg-[#10204d] h-[180px] md:h-[200px] lg:h-[250px] w-full"
           style={{ transitionDelay: `${project.length * 0.1}s` }}
         >
           <h1 className="text-[2rem]">📸</h1>
           <p className="text-white font-inter font-semibold text-[0.83rem]">More projects available on request</p>
-          <a href="#consult" className="px-5 py-2 font-grotesque text-sm font-semibold tracking-wide bg-lemon mt-3">
+          <a href="#consult" className="px-5 py-2 font-grotesque text-sm font-semibold tracking-wide bg-amber mt-3">
             CONTACT US
           </a>
         </div>
