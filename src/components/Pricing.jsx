@@ -23,14 +23,14 @@ const handleWhatsapp = (packageName, price) => {
 };
 
 const CardBase = ({ p, featured, dark, cardRef, delay }) => {
-  const bg = featured ? "bg-green" : dark ? "bg-[#0a0f06]" : "bg-white border border-gray-200";
-  const titleColor = featured || dark ? "text-white" : "";
-  const priceColor = featured ? "lemon" : dark ? "text-white font-bebas" : "green";
-  const subColor = featured ? "text-gray-100" : dark ? "text-[rgba(255,255,255,0.6)]" : "gray";
-  const itemColor = featured || dark ? "text-white" : "gray";
+  const bg = featured ? "bg-[#10204d] " : dark ? "bg-[#10204d]" : "bg-white border border-gray-200";
+  const titleColor = featured || dark ? "text-white" : "purple";
+  const priceColor = featured ? "amber" : dark ? "text-white font-bebas" : "purple";
+  const subColor = featured ? "text-gray-100" : dark ? "text-[rgba(255,255,255,0.6)]" : "gray-2";
+  const itemColor = featured || dark ? "text-white" : "gray-2";
   const btnClass = featured || dark
-    ? "bg-lemon text-dark"
-    : "bg-green text-white";
+    ? "bg-amber text-dark"
+    : "bg-purple text-white";
 
   return (
     <div
@@ -38,7 +38,7 @@ const CardBase = ({ p, featured, dark, cardRef, delay }) => {
       className={`card-anim ${bg} px-6 py-9`}
       style={{ transitionDelay: delay }}
     >
-      <p className="w-fit bg-lemon font-inter py-0.5 px-3 text-[0.7rem] tracking-wider text-black font-semibold">
+      <p className="w-fit bg-amber font-inter py-0.5 px-3 text-[0.7rem] tracking-wider text-black font-semibold">
         {p.tag}
       </p>
       <h3 className={`font-bebas text-[1.5rem] font-semibold tracking-wide mt-3 ${titleColor}`}>
@@ -107,10 +107,10 @@ export default function Pricing() {
 
       {/* heading */}
       <div ref={headingRef} className="fade-up md:w-[75%] lg:w-[40%]">
-        <p className="green font-inter tracking-widest text-xs md:text-sm font-semibold">SERVICE PACKAGE</p>
-        <h1 className="font-bebas text-[2.2rem] lg:text-[3rem] mt-1 font-bold dark tracking-wide">OUR PRICING</h1>
-        <div className="w-[70px] h-[3px] bg-lemon mt-1"></div>
-        <p className="font-inter gray mt-5 text-[0.9rem]">Transparent pricing for every budget. All packages include installation, testing, and after-service support. Contact us for custom quotes.</p>
+        <p className="purple font-inter tracking-widest text-xs md:text-sm font-semibold">SERVICE PACKAGE</p>
+        <h1 className="font-bebas text-[2.2rem] lg:text-[3rem] mt-1 font-bold purple tracking-wide">OUR PRICING</h1>
+        <div className="w-[70px] h-[3px] bg-amber mt-1"></div>
+        <p className="font-inter gray-2 mt-5 text-[0.9rem]">Transparent pricing for every budget. All packages include installation, testing, and after-service support. Contact us for custom quotes.</p>
       </div>
 
       {/* grid */}
@@ -127,7 +127,7 @@ export default function Pricing() {
         ))}
       </div>
 
-      <p className="gray text-[0.83rem] font-inter flex justify-center mt-10 text-center">
+      <p className="gray-2 text-[0.83rem] font-inter flex justify-center mt-10 text-center">
         * All prices are starting prices and may vary based on site conditions, distance, and equipment specifications. Contact us for an accurate quote.
       </p>
     </div>

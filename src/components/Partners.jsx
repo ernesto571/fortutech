@@ -9,7 +9,7 @@ const partners = [
 export default function Partners () {
 
     return (
-        <div className="bg-off py-16 px-6 flex flex-col justify-center text-center max-w-screen overflow-x-hidden">
+        <div className="bg-white py-16 px-6 flex flex-col justify-center text-center max-w-screen overflow-x-hidden">
             {/* heading */}
             <div className="flex flex-col justify-center items-center">
                 <p className="purple font-inter tracking-widest text-xs font-semibold uppercase">Official Distributor Partner</p>
@@ -20,7 +20,7 @@ export default function Partners () {
 
             <div className="flex flex-wrap gap-6 md:gap-10 mt-8 justify-center items-center">
                 { partners.map((p) => (
-                <div key={p.url} className=" px-6 bg-white border border-gray-200 ">
+                <div key={p.url} className=" px-6 bg-off border border-gray-200 ">
                         <img src={p.url} className="w-[70px] objec-cover" />
                     </div>
                 )) }

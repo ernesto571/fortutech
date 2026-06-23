@@ -55,10 +55,10 @@ export default function Project() {
 
       {/* heading */}
       <div ref={headingRef} className="fade-up md:w-[75%] lg:w-[40%]">
-        <p className="green font-inter tracking-widest text-xs md:text-sm font-semibold">OUR WORK</p>
-        <h1 className="font-bebas text-[2.2rem] lg:text-[3rem] mt-1 font-bold dark tracking-wide">RECENT PROJECTS</h1>
-        <div className="w-[70px] h-[3px] bg-lemon mt-1"></div>
-        <p className="font-inter gray mt-5 text-[0.9rem]">Real installations. Real results. Here's a look at some of the projects we've completed for our clients.</p>
+        <p className="purple font-inter tracking-widest text-xs md:text-sm font-semibold">OUR WORK</p>
+        <h1 className="font-bebas text-[2.2rem] lg:text-[3rem] mt-1 font-bold purple tracking-wide">RECENT PROJECTS</h1>
+        <div className="w-[70px] h-[3px] bg-amber mt-1"></div>
+        <p className="font-inter gray-2 mt-5 text-[0.9rem]">Real installations. Real results. Here's a look at some of the projects we've completed for our clients.</p>
       </div>
 
       {/* grid */}

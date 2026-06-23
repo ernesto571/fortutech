@@ -38,7 +38,7 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="bg-white py-16 px-4 md:px-10 lg:px-16 max-w-screen overflow-x-hidden">
+    <div className="bg-off py-16 px-4 md:px-10 lg:px-16 max-w-screen overflow-x-hidden">
       <style>{`
         .fade-up { opacity:0; transform:translateY(28px); transition:opacity 0.6s ease,transform 0.6s ease; }
         .fade-up.animate-in { opacity:1; transform:translateY(0); }
@@ -59,7 +59,7 @@ export default function Services() {
             key={v.title}
             ref={(el) => (cardRefs.current[i] = el)}
             style={{ transitionDelay: `${i * 0.08}s` }}
-            className="card-anim relative bg-off border border-gray-200 py-5 px-6 group hover:border-[#f5a623]/40 hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden"
+            className="card-anim relative bg-white border border-gray-200 py-5 px-6 group hover:border-[#f5a623]/40 hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden"
             onClick={() => handleServiceMsg(v.title)}
           >
             {/* lemon top border on hover */}
