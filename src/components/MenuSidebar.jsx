@@ -10,7 +10,7 @@ export default function MenuSidebar({ isOpen, onClose }) {
         onClick={onClose}
       />
       <div
-        className={`fixed top-[2.9rem] bg-white border-b-2 lemon-bord shadow-inner left-0 z-50 py-4 px-6 md:px-12 w-full lg:hidden  transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-[2.9rem] bg-white border-b-2 amber-bord shadow-inner left-0 z-50 py-4 px-6 md:px-12 w-full lg:hidden  transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-y-0" : "hidden"
         }`}
       >
@@ -19,7 +19,7 @@ export default function MenuSidebar({ isOpen, onClose }) {
            <a href={l.to}
               key={l.to}
               onClick={onClose}
-              className="font-grotesque font-semibold tracking-wider text-[0.9rem] hover:text-[#1a6b2f] text-gray-800 py-3 border-b border-gray-200"
+              className="font-grotesque font-semibold tracking-wider text-[0.9rem] hover:text-[#10204d] gray-2 py-3 border-b border-gray-200"
             >
               {l.label}
             </a>
@@ -28,7 +28,7 @@ export default function MenuSidebar({ isOpen, onClose }) {
            <a href={l.to}
               key={l.to}
               onClick={onClose}
-              className="font-grotesque font-semibold tracking-wider text-[0.9rem] text-[#1a6b2f] py-3 border-b border-gray-200"
+              className="font-grotesque font-semibold tracking-wider text-[0.9rem] purple py-3 border-b border-gray-200"
             >
               → BOOK CONSULTATION
             </a>
