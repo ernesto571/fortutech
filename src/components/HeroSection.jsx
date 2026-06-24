@@ -72,13 +72,13 @@ export default function HeroSection() {
           </span>
 
           {/* title */}
-          <div
+          <h1
             id="hero-title"
             className="text-white block text-[2.6rem] leading-[3.4rem] md:text-[4rem] md:leading-[4.4rem] lg:text-[5rem] font-semibold lg:leading-[5.4rem] mt-4 font-bebas tracking-wide "
           >
             SMART ENERGY FOR A
             <span className="amber block ">BRIGHTER TOMORROW.</span>
-          </div>
+          </h1>
 
           {/* subtitle */}
           <p

@@ -19,7 +19,7 @@ const handleWhatsapp = (packageName, price) => {
     ``,
     `Please send me a detailed quote. Thank you!`,
   ].join("\n");
-  window.open(`https://wa.me/2349023744204?text=${encodeURIComponent(text)}`, "_blank");
+  window.open(`https://wa.me/2348133100045?text=${encodeURIComponent(text)}`, "_blank");
 };
 
 const CardBase = ({ p, featured, dark, cardRef, delay }) => {
@@ -44,9 +44,9 @@ const CardBase = ({ p, featured, dark, cardRef, delay }) => {
       <h3 className={`font-bebas text-[1.5rem] font-semibold tracking-wide mt-3 ${titleColor}`}>
         {p.type}
       </h3>
-      <h1 className={`text-[2rem] font-grotesque font-semibold ${priceColor}`}>
+      <h2 className={`text-[2rem] font-grotesque font-semibold ${priceColor}`}>
         {p.price}
-      </h1>
+      </h2>
       <p className={`font-inter text-[0.7rem] mt-1 ${subColor}`}>{p.sub}</p>
       <ul className="flex flex-col gap-2 mt-4">
         {p.info.map((i) => (
@@ -108,7 +108,7 @@ export default function Pricing() {
       {/* heading */}
       <div ref={headingRef} className="fade-up md:w-[75%] lg:w-[40%]">
         <p className="purple font-inter tracking-widest text-xs md:text-sm font-semibold">SERVICE PACKAGE</p>
-        <h1 className="font-bebas text-[2.2rem] lg:text-[3rem] mt-1 font-bold purple tracking-wide">OUR PRICING</h1>
+        <h2 className="font-bebas text-[2.2rem] lg:text-[3rem] mt-1 font-bold purple tracking-wide">OUR PRICING</h2>
         <div className="w-[70px] h-[3px] bg-amber mt-1"></div>
         <p className="font-inter gray-2 mt-5 text-[0.9rem]">Transparent pricing for every budget. All packages include installation, testing, and after-service support. Contact us for custom quotes.</p>
       </div>

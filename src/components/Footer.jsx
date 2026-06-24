@@ -7,8 +7,8 @@ const services = [
 ]
 
 const contact = [
-    { label:"WhatsApp: 09023744204", to:"https://wa.me/2349023744204" },
-    { label:"08133100045", to:"tel:+2348133100045" },
+    { label:"WhatsApp: 08133100045", to:"https://wa.me/2348133100045" },
+    { label:"09023744204", to:"tel:+2349023744204" },
     { label:"08136901264", to:"tel:+2348136901264" },
     { label:"Ero Arike Complex, Osogbo", to:"#consult" },
     { label:"Mon–Sat · 8:00–18:00", to:"#consult" }
@@ -18,7 +18,7 @@ const socials = [
     { label:"IG", to:"https://instagram.com/dadotech_consultant" },
     { label:"TK", to:"https://tiktok.com/@dadoraus" },
     { label:"FB", to:"https://facebook.com/share/18nQ5hncVc/" },
-    { label:"WA", to:"https://wa.me/2349023744204" }
+    { label:"WA", to:"https://wa.me/234813310004" }
 ]
 
 export default function Footer () {
@@ -32,7 +32,7 @@ export default function Footer () {
                         <h1 className="text-white ">TECH SOLAR ENERGY</h1>
                     </div>
                     <p className="text-[rgba(255,255,255,0.45)] text-[0.78rem] leading-5 font-inter font-medium mt-1 w-[70%] ">Official distributor of Chinese & Indian solar products, in collaboration with Dadotech Consultant Solar-HVAC Company.</p>
-                    <p className="amber text-[0.74rem] font-inter tracking-wider py-0.5 px-2 w-fit mt-3 bg-[rgba(245,166,35,0.14)] border border-[rgba(245,166,35,0.4)] ">RN: 9359229</p>
+                    <p className="amber text-[0.74rem] font-inter tracking-wider py-0.5 px-2 w-fit mt-3 bg-[rgba(245,166,35,0.14)] border border-[rgba(245,166,35,0.4)] ">RN: 9200781</p>
                 </section>
 
                 <section className="grid lg:justify-center  ">

@@ -15,8 +15,8 @@ const SERVICES = [
 const COOLDOWN_SECONDS = 30;
 
 const contacts = [
-  { icon: "💬", label: "WhatsApp (Primary)", value: "09023744204" },
-  { icon: "📞", label: "Phone Lines", value: "08133100045 · 08136901264" },
+  { icon: "💬", label: "WhatsApp (Primary)", value: "08133100045" },
+  { icon: "📞", label: "Phone Lines", value: " 09023744204 · 08136901264" },
   { icon: "📍", label: "Office Address", value: "Office 3, Ero Arike Shopping Complex, Along Ilesha Garage Road, Osogbo, Osun State" },
   { icon: "🕐", label: "Business Hours", value: "Monday – Saturday · 8:00AM – 6:00PM" },
 ];
@@ -73,12 +73,12 @@ export default function Consult() {
       formData.location ? `*Location:* ${formData.location}` : "",
       formData.message  ? `*Message:* ${formData.message}`  : "",
     ].filter(Boolean).join("\n");
-    window.open(`https://wa.me/2349023744204?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/2348133100045?text=${encodeURIComponent(text)}`, "_blank");
     setCooldown(COOLDOWN_SECONDS);
   };
 
   return (
-    <section id="consult" className="relative overflow-hidden py-24 px-[5%] bg-[#f6faf0]">
+    <section id="consult" className="relative overflow-hidden py-24 px-[5%] bg-off">
       <style>{`
         .fade-up { opacity:0; transform:translateY(28px); transition:opacity 0.65s ease,transform 0.65s ease; }
         .fade-up.animate-in { opacity:1; transform:translateY(0); }
@@ -94,7 +94,7 @@ export default function Consult() {
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1200&q=60')" }}
       />
       <div className="absolute inset-0" style={{
-        backgroundImage: "repeating-linear-gradient(45deg,rgba(26,107,47,0.05) 0,rgba(26,107,47,0.05) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(-45deg,rgba(26,107,47,0.05) 0,rgba(26,107,47,0.05) 1px,transparent 1px,transparent 40px)",
+        backgroundImage: "repeating-linear-gradient(45deg,#f3f5fb 0,#f3f5fb 1px,transparent 1px,transparent 40px),repeating-linear-gradient(-45deg,rgba(26,107,47,0.05) 0,rgba(26,107,47,0.05) 1px,transparent 1px,transparent 40px)",
       }}/>
 
       <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-start max-w-6xl mx-auto">
@@ -140,19 +140,19 @@ export default function Consult() {
             <div>
               <label className="block font-inter text-[0.68rem] font-bold uppercase tracking-wider gray-2 mb-1.5">Your Name</label>
               <input name="name" value={formData.name} onChange={handleChange} placeholder="e.g. Ade Bello"
-                className="w-full bg-[#f6faf0] border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors"/>
+                className="w-full bg-off border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors"/>
             </div>
             <div>
               <label className="block font-inter text-[0.68rem] font-bold uppercase tracking-wider gray-2 mb-1.5">Phone Number</label>
               <input name="phone" value={formData.phone} onChange={handleChange} placeholder="e.g. 08012345678"
-                className="w-full bg-[#f6faf0] border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors"/>
+                className="w-full bg-off border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors"/>
             </div>
           </div>
 
           <div className="mb-4">
             <label className="block font-inter text-[0.68rem] font-bold uppercase tracking-wider gray-2 mb-1.5">Service Needed</label>
             <select name="service" value={formData.service} onChange={handleChange}
-              className="w-full bg-[#f6faf0] border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors appearance-none">
+              className="w-full bg-off border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors appearance-none">
               <option value="">Select a service...</option>
               {SERVICES.map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
@@ -161,13 +161,13 @@ export default function Consult() {
           <div className="mb-4">
             <label className="block font-inter text-[0.68rem] font-bold uppercase tracking-wider gray-2 mb-1.5">Location</label>
             <input name="location" value={formData.location} onChange={handleChange} placeholder="e.g. Osogbo, Osun State"
-              className="w-full bg-[#f6faf0] border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors"/>
+              className="w-full bg-off border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors"/>
           </div>
 
           <div className="mb-2">
             <label className="block font-inter text-[0.68rem] font-bold uppercase tracking-wider gray-2 mb-1.5">Message (Optional)</label>
             <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Describe what you need..." rows={3}
-              className="w-full bg-[#f6faf0] border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors resize-none"/>
+              className="w-full bg-off border border-[#f5a623]/15 px-3.5 py-2.5 text-sm outline-none focus:border-[#f5a623] focus:bg-white transition-colors resize-none"/>
           </div>
 
           <button
