@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 const prices = [
   {tag:"STARTER", type:"BASIC SOLAR", sub:"Starting price · varies by specs", price:"₦650K+", info:['500W itel power tank', '600W solar panel', 'With all accessories', 'Full wiring & installation', '1-month support'], package:"Basic Solar Package"},
-  {tag:"BEST VALUE", type:"HOME SOLAR", sub:"Starting price · varies by specs", price:"₦1.2M+", info:['1.5KVA inverter system', '2–4 solar panels (200–450W)', '2.5KWh lithium battery', 'Full wiring & installation', '2-month support'], package:"Home Solar Package"},
+  {tag:"BEST VALUE", type:"HOME SOLAR", sub:"Starting price · varies by specs", price:"₦1.3M+", info:['1.5KVA inverter system', '2–4 solar panels (200–450W)', '2.5KWh lithium battery', 'Full wiring & installation', '2-month support'], package:"Home Solar Package"},
   {tag:"POPULAR", type:"STANDARD SOLAR", sub:"Starting price · varies by specs", price:"₦2.2M+", info:['4.2KVA inverter system', '6pcs 450W mono panels', '2.5KWh lithium battery', 'Full wiring & installation', '3-month support'], package:"Standard Solar Package"},
   {tag:"PREMIUM", type:"INDUSTRIAL SOLAR", sub:"Starting price · varies by specs", price:"₦5M+", info:['11KVA inverter system', '16KWh lithium battery bank', 'Full panel array included', 'Full wiring & installation', '6-month support'], package:"Industrial Solar Package"},
   {tag:"HVAC", type:"AC INSTALLATION", price:"₦150K+", sub:"Per unit · labour only", info:['Split unit installation', 'Piping & electrical connection', 'Testing & commissioning', 'AC servicing & repairs', 'Industrial AC available'], package:"AC Installation Package"},
